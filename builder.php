@@ -67,12 +67,7 @@
 
 					</div>
 					
-								
-					<div class="btn-group mr-3 float-right" role="group">
-					  <button class="btn btn-primary btn-icon" title="Export (Ctrl + E)" id="save-btn" data-vvveb-action="saveAjax" data-vvveb-url="/admin/?module=editor/editor&action=save" data-v-vvveb-shortcut="ctrl+e">
-						  <i class="la la-save"></i> <span data-v-gettext>Save page</span>
-					  </button>
-					</div>	
+					
 
 					<div class="btn-group float-right mr-3 responsive-btns" role="group">
 		 			 <button id="mobile-view" data-view="mobile" class="btn btn-light"  title="Mobile view" data-vvveb-action="viewport">
@@ -1100,7 +1095,7 @@ $(document).ready(function()
 		$(".component-properties-tab").hide();
 	}
 
-	Vvveb.Builder.init('demo/product/index.html', function() {
+	Vvveb.Builder.init('./index.html', function() {
 		//run code after page/iframe is loaded
 	});
 
@@ -1116,7 +1111,7 @@ $(document).ready(function()
 		// {name:"carousel", title:"Carousel",  url: "demo/carousel/index.html",  file: "demo/carousel/index.html", folder:"content", assets: ['demo/carousel/carousel.css']},
 		// {name:"offcanvas", title:"Offcanvas",  url: "demo/offcanvas/index.html", file: "demo/offcanvas/index.html", folder:"content", assets: ['demo/offcanvas/offcanvas.css','demo/offcanvas/offcanvas.js']},
 		// {name:"pricing", title:"Pricing",  url: "demo/pricing/index.html", file: "demo/pricing/index.html", folder:"ecommerce", assets: ['demo/pricing/pricing.css']},
-		{name:"product", title:"Product",  url: "demo/product/index.html", file: "demo/product/index.html", folder:"ecommerce", assets: ['demo/product/product.css']},
+		{name:"design", title:"design",  url: "./index.html", file: "./index.html", folder:"ecommerce", assets: ['./css/custom.css']},
 		//uncomment php code below and rename file to .php extension to load saved html files in the editor
 		/*
 		<?php /*
@@ -1130,7 +1125,7 @@ $(document).ready(function()
 		*/
 	]);
 	
-	Vvveb.FileManager.loadPage("product");
+	Vvveb.FileManager.loadPage("design");
 
 
 });
