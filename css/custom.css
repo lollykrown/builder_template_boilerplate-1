@@ -1,226 +1,112 @@
-html {
-  box-sizing: border-box;
-  font-size: 13px;
+body{
+  font-family: 'Montserrat', sans-serif !important;
   background-color: #fff !important;
 }
-body{
-  line-height: 1;
-  overflow-x: hidden !important;
+.nav-link{
+  color: #fff !important;
 }
-.yellow{
-  background-color: #f0de38 !important;
+.nav-link:hover, .nav-link.active, .blue-text, .black-text:hover, .footer-list a:hover{
+  color: #00BCD4 !important;
 }
-.gray {
-  background-color: rgba(248, 247, 246, 1) !important;
+.black-text{
+  color: #000 !important;
 }
-.blue {
-  color: #0756b0 !important;
+.bg-default.scrolled{
+  background-color: #000 !important;
+  padding-bottom: 1rem;
+  transition: .2s ease;
 }
-.purple{
-  background-color: #47286f !important;
-  font-size: 23px;
-  border:none !important;
+.bg-grey{
+  background-color:#f5f5f5;
 }
-.bl{
-  color: #2c1b1d !important;
+.bg-grey2{
+  background-color: #333;
 }
-.bar{
-  background-image: linear-gradient(
-    0deg,
-    #f0de38 0,
-    #f0de38 4px,
-    transparent 5px,
-    transparent
-  );
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  transition: background-position 0.3s ease;
+.bg-grey3{
+  background-color: #222;
 }
-.marker {
-  margin-left: -0.25rem;
-  margin-right: -0.25rem;
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-  background-image: linear-gradient(
-    90deg,
-    #f0de38,
-    rgba(240, 222, 56, 0.2) 80%
-  );
+.intro1 {
+	background: #333 url(../img/bg.jpg) no-repeat center bottom;
+	background-size: cover;
+	position: relative;
+	height: 100vh;
+	padding: 30px 0;
 }
-.border-black{
-  border-left: 2px solid #2c1b1d;
+.overlay {
+  background: #111;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0.50;
 }
-::-webkit-scrollbar {
-  width: 10px;
+.p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff !important;
 }
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
+.button{
+  padding:1rem 2rem;
+  color: #fff !important;
+  text-decoration: none !important;
 }
-
-::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(#fff, #4530a8);
+.blue-btn, .blue-bg{
+  background-color: #00bcd4 !important;
 }
-button:hover{
-  transition: 0.5s;
-  transform: scaleX(1.05);
+.blue-btn:hover, .black-bg{
+  background-color: #000 !important;
 }
-
-.line-1 {
-  -webkit-animation: glow-1 6s ease-in-out 0.3s infinite both;
-  animation: glow-1 6s ease-in-out 0.3s infinite both;
-  background-image: linear-gradient(
-    270deg,
-    transparent,
-    rgba(0, 0, 0, 0.25) 30%,
-    rgba(0, 0, 0, 0.25) 70%,
-    transparent
-  );
+.black-btn{
+  background-color: #000 !important;
 }
-.line-2 {
-  -webkit-animation: glow-2 7s ease-in-out 2.5s infinite both;
-  animation: glow-2 7s ease-in-out 2.5s infinite both;
-  background-image: linear-gradient(
-    270deg,
-    transparent,
-    rgba(0, 0, 0, 0.5) 30%,
-    rgba(0, 0, 0, 0.25) 70%,
-    transparent
-  );
+.black-btn:hover{
+  background-color: #00bcd4 !important;
 }
-.line-3 {
-  -webkit-animation: glow-1 5s ease-in-out 4.5s infinite both;
-  animation: glow-1 5s ease-in-out 4.5s infinite both;
-  background-image: linear-gradient(
-    270deg,
-    transparent,
-    rgba(0, 0, 0, 0.75) 30%,
-    rgba(0, 0, 0, 0.75) 70%,
-    transparent
-  );
-}
-.line-4 {
-  -webkit-animation: glow-2 7.5s ease-in-out 2.1s infinite both;
-  animation: glow-2 7.5s ease-in-out 2.1s infinite both;
-  background-image: linear-gradient(
-    270deg,
-    transparent,
-    rgba(0, 0, 0, 0.25) 30%,
-    rgba(0, 0, 0, 0.25) 70%,
-    transparent
-  );
-}
-.line-5 {
-  -webkit-animation: glow-1 6.9s ease-in-out 0.75s infinite both;
-  animation: glow-1 6.9s ease-in-out 0.75s infinite both;
-  background-image: linear-gradient(
-    270deg,
-    transparent,
-    rgba(0, 0, 0, 0.75) 30%,
-    rgba(0, 0, 0, 0.75) 70%,
-    transparent
-  );
-}
-.line-6 {
-  -webkit-animation: glow-2 8.5s ease-in-out 5s infinite both;
-  animation: glow-2 8.5s ease-in-out 5s infinite both;
-  background-image: linear-gradient(
-    270deg,
-    transparent,
-    rgba(0, 0, 0, 0.5) 30%,
-    rgba(0, 0, 0, 0.5) 70%,
-    transparent
-  );
-}
-@keyframes glow-1 {
-  0% {
-    opacity: 0;
-    transform: translateX(-20px);
-  }
-  20% {
-    opacity: 0.07;
-  }
-  50% {
-    opacity: 0.12;
-    transform: translateX(-3px);
-  }
-  70% {
-    opacity: 0;
-    transform: scaleX(2.5) translateX(3px);
-  }
-  to {
-    opacity: 0;
-  }
-}
-@keyframes glow-2 {
-  0% {
-    opacity: 0;
-    transform: scaleX(3.5) translateX(-15px);
-  }
-  24% {
-    opacity: 0.08;
-  }
-  45% {
-    opacity: 0.13;
-    transform: scaleX(2.2) translateX(-6px);
-  }
-  70% {
-    opacity: 0;
-    transform: scaleX(0.75) translateX(5px);
-  }
-  to {
-    opacity: 0;
-  }
+.clients img {
+	max-width: 140px;
+	transition: all 0.3s ease 0s;
+	opacity: 0.2;
+	filter: grayscale(1);
 }
 
-@media (min-width: 768px) {
-  #bg{
-    height:11rem !important;
-  }
-  #main-heading{
-    font-size:108px !important;
-  }
-  h2.bottom-title{
-    font-size:72px !important;
-  }
-  span.price, h2.contents{
-    font-size:54px !important;
-  }
-  #sub-heading{
-    font-size:41px !important;
-  }
-  p.desc, div.title, h3.subT{
-    font-size:34px !important;
-  }
-  div.bottom-subtitle{
-    font-size:27px !important;
-  }
-  ol, button.yellow, p.desc-muted, h3.title,button.purple{
-    font-size:23px !important;
-  }
-  .markup{
-    font-size:20px !important;
-  }
-  #list, h3.subtitle, div.more, li a.link{
-    font-size:18px !important;
-  }
-  p.text-muted{
-    font-size:14px !important;
-  }
-  img.img{
-    width:480px !important;
-    margin-left: 1rem !important;
-  }
-  #desc{
-    margin-left: 3rem;
-    margin-bottom:6rem;
-  }
-  button.purple{
-    left:10rem !important;
-  }
-  section.bann{
-    padding: 5rem !important;
-  }
-  li a.link:hover{
-    opacity: .5 !important;
-  }
+.clients img:hover {
+	transition: all 0.3s ease 0s;
+	opacity: 1;
+	filter: grayscale(0);
+	cursor: pointer;
+}
+
+.ico {
+	width: 80px;
+	height: 80px;
+	display: table;
+	background: #00BCD4;
+	margin: 0 auto 25px;
+}
+.price-cents {
+	vertical-align: super;
+	font-size: 50%;
+}
+.social-icons i:hover {
+  color:#fff !important;
+}
+.footer-payment {
+	margin: -9px -10px -10px;
+	display: table;
+}
+
+.footer-payment li {
+	float: left;
+	width: 20%;
+	padding: 0 10px;
+	opacity: 0.4;
+}
+
+.footer-payment li img {
+	max-width: 100%;
 }
