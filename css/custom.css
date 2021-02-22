@@ -1,21 +1,120 @@
-.code{
+.code {
   border: 4px solid #10162f;
 }
-.black{
+.black {
   color: #10162f !important;
 }
-.navbar-brand:hover{
+.navbar-brand:hover {
   color: #10162f;
 }
-.cademy{
+.cademy {
   color: #10162f;
   margin-left: 3px;
   background: none !important;
   border-bottom: 4px solid #10162f;
 }
-.text-blue{
+.text-blue {
   color: #3a10e5 !important;
 }
-.button-blue{
+.button-blue {
   background: #3a10e5;
+}
+.top {
+  margin-top: 1.5rem !important;
+  background: rgb(79, 224, 176) !important;
+  position: relative;
+}
+#bg {
+  background: rgba(48, 105, 240, 0.9) url(../img/bg.svg) no-repeat center bottom;
+  background-size: cover;
+  height: 100vh;
+  width: 75%;
+}
+#content {
+  clear: both;
+  width: 80%;
+  position: absolute;
+  z-index: 10;
+  margin-top: 4rem;
+  margin-left: 1.5rem;
+}
+.v-bg {
+  background-image: linear-gradient(#fff, #f288e9);
+}
+.f-20 {
+  font-size: 20px;
+}
+.f-24 {
+  font-size: 24px;
+}
+.f-28 {
+  font-size: 28px;
+}
+.f-38{
+  font-size: 38px;
+}
+.t {
+  white-space: nowrap; 
+  width: 100%; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card-text.text{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+.shift:hover{
+  transition: .5s ease;
+  box-shadow: -10px 10px rgb(16, 22, 47);;
+}
+footer a{
+  color: #000;
+}
+footer a:hover{
+  color: #6400e4;
+  text-decoration: none;
+}
+@media (min-width: 768px) {
+  .p-7 {
+    padding: 6rem 3rem !important;
+  }
+  .top {
+    margin-top: 4rem !important;
+  }
+  #content{
+    margin-left: 6rem;
+    margin-top: 6rem;
+  }
+  #next {
+    overflow-x: hidden;
+    clear: both;
+    position: relative;
+    top: -15rem;
+    margin-bottom: -12rem;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      "cir . ."
+      "cir . ."
+      "cir tri ."
+      "cir tri ."
+      ". tri rect"
+      ". tri rect"
+      ". . rect"
+      ". . rect";
+  }
+  .cir {
+    grid-area: cir;
+  }
+  .tri {
+    grid-area: tri;
+  }
+  .rect {
+    grid-area: rect;
+  }
 }

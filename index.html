@@ -5,10 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="author" content="Kayode Agboola">
   <link rel="icon" href="img/favicon.ico">
 
-  <title>Album example for Bootstrap</title>
+  <title>Sample</title>
 
 
   <!-- Bootstrap core CSS -->
@@ -17,125 +17,438 @@
   <!-- Custom styles for this template -->
   <link href="./css/custom.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> -->
 </head>
 
-<body>
-    <!-- HEADER -->
-    <header>
-      <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top py-4" style="border-bottom: 2px solid #000 !important;">
-        <div class="container">
-          <a class="navbar-brand font-weight-bold black p-0" href="#" style="font-size: 24px;"><span class="code p-0">code</span><span class="cademy">c</span>ademy</a>
-          <button class="navbar-toggler black" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon black"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-2 h5">
-              <li class="nav-item"><a class="nav-link black" href="#">Catalog</a></li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle black" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Resources
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Cheatsheets</a>
-                  <a class="dropdown-item" href="#">Articles</a>
-                  <a class="dropdown-item" href="#">Blog</a>
-                </div>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle black" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Community
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Forums</a>
-                  <a class="dropdown-item" href="#">Chat</a>
-                  <a class="dropdown-item" href="#">Chapters</a>
-                  <a class="dropdown-item" href="#">Events</a>
-                </div>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle black" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Pro Pricing
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">For Individuals</a>
-                  <a class="dropdown-item" href="#">For Students</a>
-                </div>
-              </li>
-              <li class="nav-item"><a class="nav-link black" href="#">For Business</a></li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0 ml-auto">
-              <i class="fa fa-search" style="font-size:28px;"></i>
-              <button class="btn text-blue px-4 py-4" type="button">Log in</button>
-              <button class="btn button-blue text-white px-4 py-3" type="button">Sign up</button>
-            </form>
-          </div>
+<body class="bg-white">
+  <!-- HEADER -->
+  <header>
+    <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top py-3"
+      style="border-bottom: 2px solid #000 !important;">
+      <div class="container">
+        <a class="navbar-brand font-weight-bold black p-0" href="#" style="font-size: 24px;"><span
+            class="code p-0">code</span><span class="cademy">c</span>ademy</a>
+        <button class="navbar-toggler black" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon black"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-2 h5">
+            <li class="nav-item"><a class="nav-link black" href="#">Catalog</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle black" href="#" id="navbarDropdown" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Resources
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Cheatsheets</a>
+                <a class="dropdown-item" href="#">Articles</a>
+                <a class="dropdown-item" href="#">Blog</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle black" href="#" id="navbarDropdown" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Community
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Forums</a>
+                <a class="dropdown-item" href="#">Chat</a>
+                <a class="dropdown-item" href="#">Chapters</a>
+                <a class="dropdown-item" href="#">Events</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle black" href="#" id="navbarDropdown" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Pro Pricing
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">For Individuals</a>
+                <a class="dropdown-item" href="#">For Students</a>
+              </div>
+            </li>
+            <li class="nav-item"><a class="nav-link black" href="#">For Business</a></li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0 ml-auto">
+            <i class="fa fa-search" style="font-size:28px;"></i>
+            <button class="btn text-blue px-4 py-4" type="button">Log in</button>
+            <button class="btn button-blue text-white px-4 py-3" type="button">Sign up</button>
+          </form>
         </div>
-      </nav>
-    </header>
-    <!-- HEADER -->
+      </div>
+    </nav>
+  </header>
+  <!-- HEADER -->
 
+  <section class="mt-5 top">
+    <div class="float-left" style="background-color: rgb(79,224,176); width:25%;height:100vh;">
+    </div>
+    <div id="bg" class="float-right">
+    </div>
+    <div id="content" class="d-block d-md-flex">
+      <div class="bg-white font-weight-bold p-4 mb-5" style="color:#484848;min-width: 380px;border-radius:10px;">
+        <div class="d-flex justify-content-between mb-5">
+          <span style="background-color:#6400e4;max-width: max-content;" class="text-white">PRO</span>
+          <span>30 weeks</span>
+        </div>
+        <p>Includes</p>
+        <p class="f-20"><span class="v-bg">Javascript</span>, <span class="v-bg">Node.Js</span>, <span
+            class="v-bg">SQL</span>,
+          <span class="v-bg">Express.Js</span>, <span class="v-bg">React</span>, <span class="v-bg">TDD</span>, and more
+        </p>
+        <p class="mt-2">Experience</p>
+        <h5 class="font-weight-bold">Beginners welcome</h5>
+        <p>For those who want to</p>
+        <ul class="f-20">
+          <li>Learn front-end and back-end dev</li>
+          <li>Build and style interactive sites</li>
+          <li>Communicate with web developers</li>
+        </ul>
+        <p>Earn</p>
+        <h5 class="font-weight-bold">Certificate of Welcome</h5>
+      </div>
+      <div class="p-7 text-white d-none d-md-block" style="max-width: 600px;">
+        <p class="font-weight-bold">Career Path</p>
+        <h1 class="display-4 font-weight-bold">Web Development</h1>
+        <p class="f-20">Go from no-code to an in-demand junior web developer, at a fraction of the cost of a bootcamp.
+          Start with the front-end by learning HTML, CSS, and JavaScript. Then, master the back-end and APIs
+          to round out your full-stack skills.</p>
 
-  <section>
-    <div class="">
-
+        <p class="mt-5 f-20">To start this Career Path, sign up for Codecademy Pro.</p>
+        <button class="f-28 py-3 px-5 border-0 text-capitalize font-weight-bold"
+          style="background-color: #ffd500;border-radius: 3rem;">Try it for free</button>
+      </div>
     </div>
   </section>
 
+  <section class="py-5 text-center" style="color:#484848;">
+    <div class="float-md-right text-white p-5 border-0 rounded d-none d-md-block"
+      style="background-color: rgba(48,105,240,0.9);">
+      <div style="max-width:380px;">
+        <h3 class="display-4 font-weight-bold">What will you be able to do?</h3>
+        <p class="f-20 font-weight-bold">Here are just afew things you'll be able to do with this Career Path</p>
+      </div>
+    </div>
+    <div id="next" class="container">
+      <div class="p-4 cir bg-white d-flex flex-column align-items-center" style="min-width:360px;">
+        <div class="rounded-circle"
+          style="width:120px;height:120px;background-color:#5788fa;box-shadow:-10px 10px #dfe0e3;"></div>
+        <div>
+          <h5 class="mt-5 font-weight-bold">UNDERSTAND THE FULL STACK</h5>
+          <p class="f-20 mt-4">Master the tools that front-end developers use every day, from HTML to React, plus
+            server-side back-end JavaScript libraries with Express.js.</p>
+        </div>
+      </div>
+      <div class="p-4 tri bg-white d-flex flex-column align-items-center" style="min-width:360px;">
+        <div class=""
+          style="width:0;height:0;border-left: 60px solid transparent;border-right: 60px solid transparent;border-bottom:120px solid #5788fa;transform: rotate(8deg);box-shadow:0 10px #dfe0e3;">
+        </div>
+        <div>
+          <h4 class="mt-5 font-weight-bold">BUILD A WEB APP</h4>
+          <p class="f-20 mt-4">Go beyond a landing page. Build the back-end of a web application and even create your
+            own API.</p>
+        </div>
+      </div>
+      <div class="p-4 rect bg-white d-flex flex-column align-items-center" style="min-width:360px;">
+        <div class=""
+          style="width:120px;height:120px;background-color:#5788fa;box-shadow:-10px 10px #dfe0e3;transform: rotate(-15deg);">
+        </div>
+        <div>
+          <h4 class="mt-5 font-weight-bold">SHOW OFF YOUR SKILLS</h4>
+          <p class="f-20 mt-4">Build portfolio-worthy projects while you learn, so you can show recruiters your skills
+            and
+            kick-start your career as a web developer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mb-4">
+    <h1 class="d-flex justify-content-between"><span>What projects will you build?</span> <span>TL;DR</span></h1>
+    <div class="row mt-5">
+      <div class="p-3  col-md-4">
+        <div class="card p-0 shadow-lg" style="min-width: 18rem;">
+          <img class="card-img-top" src="img/im.webp" alt="Card image cap" style="height: 220px;">
+          <div class="card-body">
+            <span style="background-color:#10162f;max-width: max-content;" class="text-white">PRO</span>
+            <h5 class="card-title t">Ravenous: Create Project & Components</h5>
+            <p class="card-text text">In this multi-section project, you'll build a React app to search for restaurants
+              using
+              the Yelp API. In this section, start the base of your project by creating all necessary React components.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="p-3 col-md-4">
+        <div class="card p-0 shadow-lg" style="min-width: 18rem;">
+          <img class="card-img-top" src="img/im2.webp" alt="Card image cap" style="height: 220px;">
+          <div class="card-body">
+            <span style="background-color:#10162f;max-width: max-content;" class="text-white">PRO</span>
+            <h5 class="card-title t">Tsunami Coffee</h5>
+            <p class="card-text text">It's time to build fluency in CSS design. In this next Pro Project, we're going to
+              practice
+              responsive design in CSS so you can hone your skills and feel confident taking them to the real world.
+
+              Why? Making a responsive design for your webpage will ensure, no matter the screen, the user will always
+              see the design you intended.
+              What's next? A coffee shop, a perfect layout, more CSS. You got this! </p>
+          </div>
+        </div>
+      </div>
+      <div class="p-3 col-md-4">
+        <div class="" style="min-width: 18rem;">
+          <iframe height="350" width="100%" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+          </iframe>
+          <p>Introduction to Web Development</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container py-5">
+    <div>
+      <h4 class="display-4 font-weight-bold text-center ">What will you learn?</h4>
+      <ul class="list-group my-5" style="border-left: 8px solid #5788fa;">
+        <li class="list-group-item">
+          <div class="d-flex">
+            <h1 class="px-5 py-3 display-4 font-weight-bold" style="color:#484848">1</h1>
+            <div class="align-self-center pt-3">
+              <h4>Learn HTML</h4>
+              <p>Get started as a web developer by learning the basics of HTML, the essential language of the web</p>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="d-flex">
+            <h1 class="px-5 py-3 display-4 font-weight-bold" style="color:#484848">2</h1>
+            <div class="align-self-center pt-3">
+              <h4>Styling a Website</h4>
+              <p>Learn and practice the fundamentals of CSS to add beautiful styling to your webpage.</p>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="d-flex">
+            <h1 class="px-5 py-3 display-4 font-weight-bold" style="color:#484848">3</h1>
+            <div class="align-self-center pt-3">
+              <h4>Getting Started with JavaScript</h4>
+              <p>Learn the fundamentals of JavaScript: syntax, variables, conditionals, and functions.</p>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item text-center p-5"><a class="text-decoration-none" href="#" style="color:#7c5ce6">+11
+            more lessons</a></li>
+      </ul>
+      <button class="d-flex justify-content-around f-28 mx-auto py-3 px-5 border-0 text-capitalize font-weight-bold"
+        style="background-color: #ffd500;border-radius: 3rem;">Try it for free</button>
+    </div>
+    <div class="row mt-5 py-4">
+      <div class="text-white col-md-6 p-5" style="font-weight:300;background-color: #141c3a;">
+        <h1 class="mb-5 pt-5">
+          <q>
+            You really feel like there’s nothing you can’t learn, which in turn builds
+            so much confidence in your skills and gives the momentum to keep learning.
+          </q>
+        </h1>
+        <p class="f-20 font-weight-bold" style="line-height: .7;">Joey</p>
+        <p class="f-20" style="line-height: .75;">Codecademy Learner</p>
+      </div>
+      <div class="text-center col-md-6 px-5 p-7">
+        <h1 class="display-4 font-weight-bold">How are Career Paths different?</h1>
+        <h3 class="f-28 font-weight-bold my-4">Get in-depth knowledge.</h3>
+        <p class="f-20">Learning to code means more than just memorizing syntax. Instead, we help
+          you think like a real programmer.</p>
+        <h3 class="f-28 font-weight-bold my-4">Get a helpful roadmap.</h3>
+        <p class="f-20">Like a career advisor, we guide you through each step. You’ll learn the
+          right thing at the right time, all in one place.</p>
+        <h3 class="f-28 font-weight-bold my-4">Get job ready.</h3>
+        <p class="f-20">Gain practical experience as you go by creating portfolio-worthy
+          projects that will help you land your next job.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="row">
+      <div class="col-md-6 py-4">
+        <h1 class="display-4 font-weight-bold">Codecademy Pro</h1>
+        <p>To get Career Paths, sign up for Codecademy Pro. With Pro, you’ll have unlimited access to everything you
+          need to take your learning to the next level.</p>
+        <a href="#" class="btn btn-outline-primary px-5 py-3 font-weight-bold">Learn More</a>
+      </div>
+      <div class="col-md-6 ">
+        <img src="img/pc.webp" class="img-fluid">
+      </div>
+    </div>
+  </section>
+  <section class="py-5" style="background-color: #6400e4;">
+    <div class="container py-5">
+      <div class="text-center py-5">
+        <h1 class="text-white display-4 font-weight-bold mb-5">Ready to kick-start your career?</h1>
+        <button class="f-28 py-3 px-5 border-0 text-capitalize font-weight-bold"
+          style="background-color: #ffd500;border-radius: 3rem;">Try it for free</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="container py-5 mb-5">
+    <div>
+      <h1 class="text-center">Looking for something else?</h1>
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <p class="font-weight-bold" style="color:#6400e4;">View Career Paths ></p>
+          <div class="px-4 pt-4 pb-0 shift" style="border: 2px solid #000;">
+            <div>
+              <span style="background-color:#10162f;max-width: max-content;" class="text-white">PRO</span>
+              <span>Career Path</span>
+            </div>
+            <p class="f-24  mt-3 font-weight-bold pb-0">Computer Science</p>
+            <p><span class="f-24">&bull;</span>Beginner friendly, 56 lessons</p>
+            <div class="d-flex justify-content-center py-5">
+              <img src="img/db.svg" class="img-fluid" style="max-width:200px;" alt="">
+            </div>
+            <p class="text-right font-weight-bold">Job Essentials</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <p class="font-weight-bold" style="color:#6400e4;">View Career Paths ></p>
+          <div class="px-4 pt-4 pb-0 shift" style="border: 2px solid #000;">
+            <div>
+              <span style="background-color:#10162f;max-width: max-content;" class="text-white">PRO</span>
+              <span>Skill Path</span>
+            </div>
+            <p class="f-24  mt-3 font-weight-bold pb-0">Build a Website with HTML, CSS and Github pages</p>
+            <p><span class="f-24">&bull;</span>Beginner friendly, 56 lessons</p>
+            <div class="d-flex justify-content-center py-2">
+              <img src="img/pieces.svg" class="img-fluid" style="max-width:200px;" alt="">
+            </div>
+            <p class="text-right font-weight-bold mt-2">Job Essentials</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- FOOTER -->
-  <!-- <footer class="bg-grey3 text-white py-5">
-    <div class="container py-5">
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <h1 class=""><a class="text-decoration-none text-white font-weight-bold" href="index.html">Minutes</a></h1>
-          <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipiscing elit rhoncus tempus perdiet risus sit amet volutpat.</p>
-          <ul class="d-flex list-unstyled social-icons">
-            <li class="mr-3"><a href="#"><i class="fa fa-twitter blue-text" style="font-size: 1.3rem;"></i></a></li>
-            <li class="mr-3"><a href="#"><i class="fa fa-facebook blue-text" style="font-size: 1.3rem;"></i></a></li>
-            <li class="mr-3"><a href="#"><i class="fa fa-dribbble blue-text" style="font-size: 1.3rem;"></i></a></li>
-            <li class="mr-3"><a href="#"><i class="fa fa-linkedin blue-text" style="font-size: 1.3rem;"></i></a></li>
-            <li class="mr-3"><a href="#"><i class="fa fa-google-plus blue-text" style="font-size: 1.3rem;"></i></a></li>
-            <li class="mr-3"><a href="#"><i class="fa fa-instagram blue-text" style="font-size: 1.3rem;"></i></a></li>
-          </ul>
-        </div>
-        <div class="col-md-4 mb-4">
-          <h6 class="font-weight-bold text-uppercase">Related Links</h6>
-          <div class="row">
-            <div class="col-md-6">
-              <ul class="footer-list list-unstyled">
-                <li class="mb-2"><a href="#" class="text-decoration-none text-muted">About Us</a></li>
-                <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Testimonials</a></li>
-                <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Our Team</a></li>
-                <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Contact Us</a></li>
+  <footer class="mt-3" style="border-top: 2px solid #000">
+    <div class="container">
+      <div style="border-bottom: 2px solid #000">
+        <div class="row">
+          <div class="col-md-6 row">
+            <div class="col-6 col-lg-4 py-4">
+              <h4>COMPANY</h4>
+              <ul class="list-unstyled">
+                <li><a href="#">About</a></li>
+                <li><a href="#">We're Hiring</a></li>
+                <li><a href="#">Shop</a></li>
+              </ul>
+              <ul class="d-flex list-unstyled mb-5">
+                <li class="mr-2"><a class="f-24" style="color:#000;" href="#"><i class="fa fa-twitter"></i></a></li>
+                <li class="mr-2"><a class="f-24" style="color:#000;" href="#"><i class="fa fa-facebook"></i></a></li>
+                <li class="mr-2"><a class="f-24" style="color:#000;" href="#"><i class="fa fa-instagram"></i></a></li>
+                <li class="mr-2"><a class="f-24" style="color:#000;" href="#"><i class="fa fa-youtube"></i></a></li>
+              </ul>
+              <h4>MOBILE</h4>
+              <a href="#"><img src="img/apple.svg" class="my-2" /></a>
+              <a href="#"><img src="img/android.png" class="img-fluid p-0" style="max-width:140px" /></a>
+            </div>
+            <div class="col-6 col-lg-4 py-4">
+              <h4>RESOURCES</h4>
+              <ul class="list-unstyled mb-5">
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Cheatsheats</a></li>
+                <li><a href="#">Articles</a></li>
+              </ul>
+
+              <h4>INDIVIDUAL PLANS</h4>
+              <ul class="list-unstyled mb-5">
+                <li><a href="#">Pro Membership</a></li>
+                <li><a href="#">For Students</a></li>
+              </ul>
+              <h4>SUPPORT</h4>
+              <ul class="list-unstyled">
+                <li><a href="#">Help Center</a></li>
               </ul>
             </div>
-            <div class="col-md-6">
-              <ul class="footer-list list-unstyled">
-                <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Register</a></li>
-                <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Forum</a></li>
-                <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Affiliate</a></li>
-                <li class="mb-2"><a href="#" class="text-decoration-none text-muted">FAQ</a></li>
+            <div class="col-12 col-lg-4 py-4 d-flex d-md-block justify-content-between">
+              <div>
+                <h4>COMMUNITY</h4>
+                <ul class="list-unstyled mb-5">
+                  <li><a href="#">Forums</a></li>
+                  <li><a href="#">Chapters</a></li>
+                  <li><a href="#">Events</a></li>
+                </ul>
+              </div>
+              <div class="ml-auto">
+                <h4>ENTERPRISE PLANS</h4>
+                <ul class="list-unstyled mb-5">
+                  <li><a href="#">For Business</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-1 d-none d-md-block">
+            <div class="my-3" style="height:90%;width:1px;background-color: #000;">
+            </div>
+          </div>
+          <div class="col-12 col-md-5 row">
+            <div class="col-12 col-lg-6 py-4">
+              <h4>COURSE CATALOG</h4>
+              <p class="font-weight-bold">Subjects</p>
+              <ul class="list-unstyled">
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">Data Science</a></li>
+                <li><a href="#">Computer Science</a></li>
+                <li><a href="#">Developer Tools</a></li>
+                <li><a href="#">Machine Learning</a></li>
+                <li><a href="#">Code Foundations</a></li>
+                <li><a href="#">Web Design</a></li>
+                <li>&mdash;</li>
+                <li><a href="#">Full Catalog</a></li>
+                <li><a href="#">Beta Content</a></li>
+                <li><a href="#">Roadmap</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-3 py-4">
+              <h4 class="invisible">COURSE</h4>
+              <p class="font-weight-bold">Languages</p>
+              <ul class="list-unstyled">
+                <li><a href="#">HTML & CSS</a></li>
+                <li><a href="#">Python</a></li>
+                <li><a href="#">Javascript</a></li>
+                <li><a href="#">Java</a></li>
+                <li><a href="#">SQL</a></li>
+                <li><a href="#">Bash/Shell</a></li>
+                <li><a href="#">Ruby</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-3 py-4">
+              <h4 class="invisible">COR</h4>
+              <p class="invisible">Languages</p>
+              <ul class="list-unstyled mb-5">
+                <li><a href="#">C++</a></li>
+                <li><a href="#">R</a></li>
+                <li><a href="#">C#</a></li>
+                <li><a href="#">PHP</a></li>
+                <li><a href="#">Go</a></li>
+                <li><a href="#">Swift</a></li>
+                <li><a href="#">Kotlin</a></li>
               </ul>
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-4">
-          <h6 class="font-weight-bold text-uppercase">Payment Methods</h6>
-          <ul class="footer-payment list-unstyled">
-            <li><a href="#"><img src="img/pay1.png" class="img-fluid" alt=""></a></li>
-            <li><a href="#"><img src="img/pay2.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pay3.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pay5.png" alt=""></a></li>
-          </ul>
-          <br>
-          <p>&copy; 2021. Minutes. All Rights Reserved.<br>Designed, developed &amp; Maintained by Theme.Express</p>
+      </div>
+      <div class="d-flex justify-content-between py-3">
+        <div>
+          <a href="#">Privacy Policy</a> |
+          <a href="#">Cookie Policy</a> |
+          <a href="#">Do Not Sell My Personal Information</a> |
+          <a href="#">Terms</a>
         </div>
+        <p>Made with️❤️in NYC © 2021 Codecademy</p>
       </div>
     </div>
-  </footer> -->
+  </footer>
   <!-- FOOTER -->
 
 
