@@ -1,8 +1,12 @@
 body{
   font-family: 'Montserrat', sans-serif;
+  color: #591F00 !important;
 }
 .grey-bg{
   background-color: #f7f7f7 !important;
+}
+.brown{
+  color: #591F00 !important;
 }
 .grey{
   color:#666 !important;
@@ -11,5 +15,5 @@ body{
   background-color: #666;
 }
 a:hover{
-  color: #008329 !important;
+  color: #591F00 !important;
 }
