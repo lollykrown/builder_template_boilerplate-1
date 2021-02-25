@@ -1,3 +1,7 @@
+:root {
+  --orange: #ff9900;
+  --blue:#069992;
+}
 html {
   box-sizing: border-box;
   font-size: 13px;
@@ -8,16 +12,16 @@ body{
   overflow-x: hidden !important;
 }
 .yellow{
-  background-color: #f0de38 !important;
+  background-color: var(--orange) !important;
 }
 .gray {
   background-color: rgba(248, 247, 246, 1) !important;
 }
 .blue {
-  color: #0756b0 !important;
+  color: var(--blue) !important;
 }
 .purple{
-  background-color: #47286f !important;
+  background-color: #df067d !important;
   font-size: 23px;
   border:none !important;
 }
@@ -27,8 +31,8 @@ body{
 .bar{
   background-image: linear-gradient(
     0deg,
-    #f0de38 0,
-    #f0de38 4px,
+    var(--orange) 0,
+    var(--orange) 4px,
     transparent 5px,
     transparent
   );
@@ -43,7 +47,7 @@ body{
   padding-right: 0.25rem;
   background-image: linear-gradient(
     90deg,
-    #f0de38,
+    var(--orange),
     rgba(240, 222, 56, 0.2) 80%
   );
 }
