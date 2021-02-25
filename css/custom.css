@@ -1,12 +1,18 @@
+:root {
+  --primary: rgb(255, 94, 57);
+  --text: #090E3F;
+  --white: #ffffff;
+  --blue: #0055d4;
+}
 body{
   font-family: 'Montserrat', sans-serif !important;
-  background-color: #fff !important;
 }
 .nav-link{
   color: #fff !important;
 }
 .nav-link:hover, .nav-link.active, .blue-text, .black-text:hover, .footer-list a:hover{
-  color: #00BCD4 !important;
+  color: var(--blue) !important;
+  font-weight: 600 !important;
 }
 .black-text{
   color: #000 !important;
@@ -56,7 +62,7 @@ body{
   text-decoration: none !important;
 }
 .blue-btn, .blue-bg{
-  background-color: #00bcd4 !important;
+  background-color: var(--blue) !important;
 }
 .blue-btn:hover, .black-bg{
   background-color: #000 !important;
@@ -65,7 +71,7 @@ body{
   background-color: #000 !important;
 }
 .black-btn:hover{
-  background-color: #00bcd4 !important;
+  background-color: var(--blue) !important;
 }
 .clients img {
 	max-width: 140px;
@@ -85,7 +91,7 @@ body{
 	width: 80px;
 	height: 80px;
 	display: table;
-	background: #00BCD4;
+	background: var(--blue);
 	margin: 0 auto 25px;
 }
 .price-cents {
