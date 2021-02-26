@@ -3,10 +3,10 @@ body {
   /* font-family: "Montserrat", Arial, sans-serif; */
 }
 .bg {
-  background-color: #012a45 !important;
+  background-color: #060145 !important;
 }
 .blu {
-  color: #0399ed !important;
+  color: #03edce !important;
 }
 
 .line {
@@ -25,16 +25,16 @@ body {
   border-radius: 10px;
 }
 .blue {
-  background-color: #0399ed !important;
+  background-color: #04bfcc !important;
 }
 .blue:hover {
-  background-color: #036aab !important;
+  background-color: #039aa5 !important;
 }
 .orange {
-  background-color: #e27730 !important;
+  background-color: #e93232 !important;
 }
 .orange:hover {
-  background-color: #bc5614 !important;
+  background-color: #b81717 !important;
 }
 button {
   font-family: "Montserrat", Arial, sans-serif !important;
@@ -52,12 +52,12 @@ button {
     margin-top: -214px !important;
   }
 }
-#sullie-xl {
+#panda-xl {
   position: absolute;
   width: 787px;
   height: 715px;
-  margin-top: -674px;
+  margin-top: -774px;
   right: 0;
-  background: url(../img/sullie-xl.svg) no-repeat 0 0;
+  background: url(../img/panda-xl.svg) no-repeat 0 0;
   background-size: cover;
 }
